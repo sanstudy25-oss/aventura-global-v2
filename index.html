@@ -1,0 +1,461 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventura Global - Agencia de Viajes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-container">
+            <a href="#top" class="logo">
+                <span class="logo-icon">&#9992;</span> Aventura Global
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#top" class="nav-link">Inicio</a></li>
+                    <li><a href="#destinos" class="nav-link">Destinos</a></li>
+                    <li><a href="#galeria" class="nav-link">Galeria</a></li>
+                    <li><a href="#resenas" class="nav-link">Resenas</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="header-derecha">
+                <button class="modo-toggle" id="modo-toggle" aria-label="Cambiar modo">&#9790;</button>
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="menu-hamburger">&#9776;</label>
+            </div>
+        </div>
+    </header>
+
+    <div id="top"></div>
+
+    <main>
+
+        <section class="hero">
+            <div class="globo-container">
+                <div class="globo" id="globo">
+                    <div class="globo-slide globo-1">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=500&fit=crop" alt="Playa paradisiaca">
+                        <div class="globo-info">
+                            <h2>Caribe Mexicano</h2>
+                            <p>Playas paradisiacas en Cancun</p>
+                        </div>
+                    </div>
+                    <div class="globo-slide globo-2">
+                        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&h=500&fit=crop" alt="Montanas nevadas">
+                        <div class="globo-info">
+                            <h2>Alpes Suizos</h2>
+                            <p>Aventura en la montana</p>
+                        </div>
+                    </div>
+                    <div class="globo-slide globo-3">
+                        <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=800&h=500&fit=crop" alt="Torre Eiffel Paris">
+                        <div class="globo-info">
+                            <h2>Europa Clasica</h2>
+                            <p>Paris, Roma y Barcelona</p>
+                        </div>
+                    </div>
+                    <div class="globo-slide globo-4">
+                        <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&h=500&fit=crop" alt="Safari Africa">
+                        <div class="globo-info">
+                            <h2>Safari Africano</h2>
+                            <p>Kenia y Tanzania</p>
+                        </div>
+                    </div>
+                    <div class="globo-slide globo-5">
+                        <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800&h=500&fit=crop" alt="Tokio Japon">
+                        <div class="globo-info">
+                            <h2>Tokio, Japon</h2>
+                            <p>Cultura y tradicion</p>
+                        </div>
+                    </div>
+                    <div class="globo-slide globo-6">
+                        <img src="https://images.unsplash.com/photo-1523592121529-f6dde35f079e?w=800&h=500&fit=crop" alt="Santorini Grecia">
+                        <div class="globo-info">
+                            <h2>Santorini, Grecia</h2>
+                            <p>Mediterraneo turquoise</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="globo-instruccion">&#128070; Manten presionado y arrastra para girar</div>
+            </div>
+        </section>
+
+        <section id="destinos" class="seccion">
+            <div class="contenedor">
+                <h2 class="seccion-titulo">Nuestros Paquetes de Viaje</h2>
+                <p class="seccion-subtitulo">Elige la experiencia perfecta para ti</p>
+
+                <div class="paquetes">
+                    <article class="paquete">
+                        <div class="paquete-img">
+                            <img src="img/caribemexicano.jpg" alt="Cancun Mexico">
+                            <div class="paquete-badge">Popular</div>
+                        </div>
+                        <div class="paquete-info">
+                            <h3>Caribe Mexicano</h3>
+                            <h5 class="paquete-region">&#127757; America Latina</h5>
+                            <p class="paquete-desc">Disfruta de las playas turquesas de Cancun y los cenotes de la Riviera Maya. Incluye hotel 5 estrellas, tours a Chichen Itza y snorkel en Isla Mujeres.</p>
+                            <h6 class="paquete-incluye-titulo">Incluye:</h6>
+                            <ul class="paquete-incluye">
+                                <li>&#10003; Hotel 5 estrellas</li>
+                                <li>&#10003; Vuelos ida y vuelta</li>
+                                <li>&#10003; Tours guiados</li>
+                            </ul>
+                            <div class="paquete-detalles">
+                                <span class="duracion">&#128197; 7 dias / 6 noches</span>
+                                <span class="precio">$4.800.000 COP</span>
+                            </div>
+                            <a href="#contacto" class="btn-paquete">Reservar Ahora</a>
+                        </div>
+                    </article>
+
+                    <article class="paquete">
+                        <div class="paquete-img">
+                            <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=600&h=400&fit=crop" alt="Torre Eiffel Paris">
+                            <div class="paquete-badge badge-especial">Exclusivo</div>
+                        </div>
+                        <div class="paquete-info">
+                            <h3>Europa Clasica</h3>
+                            <h5 class="paquete-region">&#127758; Europa</h5>
+                            <p class="paquete-desc">Recorre Paris, Roma y Barcelona en un viaje inolvidable. Visita la Torre Eiffel, el Coliseo y la Sagrada Familia con guias expertos.</p>
+                            <h6 class="paquete-incluye-titulo">Incluye:</h6>
+                            <ul class="paquete-incluye">
+                                <li>&#10003; Hoteles boutique</li>
+                                <li>&#10003; Vuelos premium</li>
+                                <li>&#10003; Guia privado</li>
+                            </ul>
+                            <div class="paquete-detalles">
+                                <span class="duracion">&#128197; 12 dias / 11 noches</span>
+                                <span class="precio">$14.000.000 COP</span>
+                            </div>
+                            <a href="#contacto" class="btn-paquete">Reservar Ahora</a>
+                        </div>
+                    </article>
+
+                    <article class="paquete">
+                        <div class="paquete-img">
+                            <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=600&h=400&fit=crop" alt="Safari Africa leones">
+                            <div class="paquete-badge badge-aventura">Aventura</div>
+                        </div>
+                        <div class="paquete-info">
+                            <h3>Safari Africano</h3>
+                            <h5 class="paquete-region">&#127757; Africa</h5>
+                            <p class="paquete-desc">Vive la experiencia de observar la gran fauna africana en Kenia y Tanzania. Incluye alojamiento en campamentos de lujo y safaris guiados al amanecer.</p>
+                            <h6 class="paquete-incluye-titulo">Incluye:</h6>
+                            <ul class="paquete-incluye">
+                                <li>&#10003; Campamento de lujo</li>
+                                <li>&#10003; Safaris guiados</li>
+                                <li>&#10003; Experiencia completa</li>
+                            </ul>
+                            <div class="paquete-detalles">
+                                <span class="duracion">&#128197; 10 dias / 9 noches</span>
+                                <span class="precio">$19.200.000 COP</span>
+                            </div>
+                            <a href="#contacto" class="btn-paquete">Reservar Ahora</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" class="seccion seccion-gris">
+            <div class="contenedor">
+                <h2 class="seccion-titulo">Galeria de Destinos</h2>
+                <p class="seccion-subtitulo">Momentos capturados por nuestros viajeros</p>
+
+                <div class="galeria">
+                    <div class="galeria-item">
+                        <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=500&h=400&fit=crop" alt="Maldivas">
+                        <div class="galeria-overlay"><span>Maldivas</span></div>
+                    </div>
+                    <div class="galeria-item">
+                        <img src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=500&h=400&fit=crop" alt="Aurora boreal Islandia">
+                        <div class="galeria-overlay"><span>Islandia</span></div>
+                    </div>
+                    <div class="galeria-item">
+                        <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=500&h=400&fit=crop" alt="Tokio Japon templo">
+                        <div class="galeria-overlay"><span>Tokio, Japon</span></div>
+                    </div>
+                    <div class="galeria-item">
+                        <img src="img/BaliIndonesia.jpg" alt="Bali Indonesia">
+                        <div class="galeria-overlay"><span>Bali, Indonesia</span></div>
+                    </div>
+                    <div class="galeria-item">
+                        <img src="img/AlpesSuizos.png" alt="Montañas Nevadas Suiza">
+                        <div class="galeria-overlay"><span>Alpes Suizos</span></div>
+                    </div>
+                    <div class="galeria-item">
+                        <img src="img/SantoriniGrecia.webp" alt="Santorini Grecia">
+                        <div class="galeria-overlay"><span>Santorini, Grecia</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resenas" class="seccion">
+            <div class="contenedor">
+                <h2 class="seccion-titulo">Lo Que Dicen Nuestros Clientes</h2>
+                <p class="seccion-subtitulo">Experiencias reales de viajeros satisfechos</p>
+
+                <div class="resenas">
+                    <article class="resena">
+                        <div class="resena-header">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face" alt="Foto de Maria Lopez" class="resena-foto">
+                            <div>
+                                <h4 class="resena-nombre">Maria Lopez</h4>
+                                <span class="resena-destino">Caribe Mexicano</span>
+                            </div>
+                        </div>
+                        <div class="resena-estrellas">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
+                        <p class="resena-texto">"Una experiencia increible. Los cenotes fueron magicos y el hotel era espectacular. El guia turistico fue muy amable y conocedor. Sin duda, volvere a viajar con Aventura Global."</p>
+                    </article>
+
+                    <article class="resena">
+                        <div class="resena-header">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="Foto de Carlos Ramirez" class="resena-foto">
+                            <div>
+                                <h4 class="resena-nombre">Carlos Ramirez</h4>
+                                <span class="resena-destino">Europa Clasica</span>
+                            </div>
+                        </div>
+                        <div class="resena-estrellas">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
+                        <p class="resena-texto">"El viaje por Europa supero todas mis expectativas. Todo estaba perfectamente organizado: los hoteles, los traslados y las visitas. Paris de noche es simplemente magico. 100% recomendado."</p>
+                    </article>
+
+                    <article class="resena">
+                        <div class="resena-header">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face" alt="Foto de Ana Martinez" class="resena-foto">
+                            <div>
+                                <h4 class="resena-nombre">Ana Martinez</h4>
+                                <span class="resena-destino">Safari Africano</span>
+                            </div>
+                        </div>
+                        <div class="resena-estrellas">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
+                        <p class="resena-texto">"Ver los leones en su habitat natural fue un sueno hecho realidad. El campamento de lujo era comodo y el personal muy atento. Esta agencia organiza todo perfectamente."</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="seccion seccion-gris">
+            <div class="contenedor">
+                <h2 class="seccion-titulo">Contactanos</h2>
+                <p class="seccion-subtitulo">Estamos listos para planificar tu proxima aventura</p>
+
+                <div class="contacto-container">
+                    <form class="contacto-form" action="#" method="post">
+                        <div class="form-grupo">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-grupo">
+                            <label for="email">Correo electronico</label>
+                            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                        </div>
+                        <div class="form-grupo">
+                            <label for="telefono">Telefono</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="+57 300 123 4567">
+                        </div>
+                        <div class="form-grupo">
+                            <label for="paquete">Paquete de interes</label>
+                            <select id="paquete" name="paquete">
+                                <option value="">Selecciona un paquete</option>
+                                <option value="caribe">Caribe Mexicano - $4.800.000 COP</option>
+                                <option value="europa">Europa Clasica - $14.000.000 COP</option>
+                                <option value="safari">Safari Africano - $19.200.000 COP</option>
+                            </select>
+                        </div>
+                        <div class="form-grupo">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuentanos sobre tu viaje ideal..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+                    </form>
+
+                    <div class="contacto-info">
+                        <div class="info-item">
+                            <div class="info-icono">&#128205;</div>
+                            <div>
+                                <h4>Direccion</h4>
+                                <p>Calle Principal #123<br>Bogota, Colombia</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icono">&#128222;</div>
+                            <div>
+                                <h4>Telefono</h4>
+                                <p>+57 (1) 234-5678<br>+57 300 123 4567</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icono">&#128231;</div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@aventuraglobal.com<br>reservas@aventuraglobal.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icono">&#128337;</div>
+                            <div>
+                                <h4>Horario</h4>
+                                <p>Lunes a Viernes: 8am - 6pm<br>Sabados: 9am - 2pm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="footer-contenido">
+                <div class="footer-marca">
+                    <a href="#top" class="logo footer-logo">
+                        <span class="logo-icon">&#9992;</span> Aventura Global
+                    </a>
+                    <p>Haciendo realidad tus suenos de viaje desde 2010.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces Rapidos</h4>
+                    <ul>
+                        <li><a href="#top">Inicio</a></li>
+                        <li><a href="#destinos">Destinos</a></li>
+                        <li><a href="#galeria">Galeria</a></li>
+                        <li><a href="#resenas">Resenas</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                    <h5 class="footer-sub">Horarios de Atencion</h5>
+                    <p class="footer-sub-texto">Lunes a Viernes: 8am - 6pm</p>
+                    <p class="footer-sub-texto">Sabados: 9am - 2pm</p>
+                </div>
+                <div class="footer-redes">
+                    <h4>Siguenos</h4>
+                    <div class="redes-sociales">
+                        <a href="#" aria-label="Facebook">FB</a>
+                        <a href="#" aria-label="Instagram">IG</a>
+                        <a href="#" aria-label="Twitter">TW</a>
+                        <a href="#" aria-label="YouTube">YT</a>
+                    </div>
+                    <h6 class="footer-copy">Aventura Global S.A.S</h6>
+                    <p class="footer-nit">NIT: 900.123.456-7</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Aventura Global. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // GLOBO TERRAQUEO
+        const globo = document.getElementById('globo');
+        let isDragging = false;
+        let startX = 0;
+        let currentRotation = 0;
+        let autoRotate;
+
+        function updateGlobe() {
+            globo.style.transform = 'translateZ(-300px) rotateY(' + currentRotation + 'deg)';
+        }
+
+        globo.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            startX = e.clientX;
+            clearInterval(autoRotate);
+            globo.style.cursor = 'grabbing';
+            e.preventDefault();
+        });
+
+        document.addEventListener('mousemove', (e) => {
+            if (!isDragging) return;
+            const diff = e.clientX - startX;
+            currentRotation += diff * 0.5;
+            startX = e.clientX;
+            globo.style.transition = 'none';
+            updateGlobe();
+        });
+
+        document.addEventListener('mouseup', () => {
+            if (!isDragging) return;
+            isDragging = false;
+            globo.style.cursor = 'grab';
+            startAutoRotate();
+        });
+
+        globo.addEventListener('touchstart', (e) => {
+            isDragging = true;
+            startX = e.touches[0].clientX;
+            clearInterval(autoRotate);
+        }, { passive: true });
+
+        globo.addEventListener('touchmove', (e) => {
+            if (!isDragging) return;
+            const diff = e.touches[0].clientX - startX;
+            currentRotation += diff * 0.5;
+            startX = e.touches[0].clientX;
+            globo.style.transition = 'none';
+            updateGlobe();
+            e.preventDefault();
+        }, { passive: false });
+
+        globo.addEventListener('touchend', () => {
+            isDragging = false;
+            startAutoRotate();
+        });
+
+        function startAutoRotate() {
+            clearInterval(autoRotate);
+            autoRotate = setInterval(() => {
+                currentRotation -= 60;
+                globo.style.transition = 'transform 1s ease';
+                updateGlobe();
+            }, 3000);
+        }
+
+        startAutoRotate();
+
+        // MODO OSCURO / CLARO
+        const btnModo = document.getElementById('modo-toggle');
+        const body = document.body;
+
+        if (localStorage.getItem('modo') === 'oscuro') {
+            body.classList.add('modo-oscuro');
+            btnModo.innerHTML = '&#9728;';
+        }
+
+        btnModo.addEventListener('click', () => {
+            body.classList.toggle('modo-oscuro');
+            const esOscuro = body.classList.contains('modo-oscuro');
+            btnModo.innerHTML = esOscuro ? '&#9728;' : '&#9790;';
+            localStorage.setItem('modo', esOscuro ? 'oscuro' : 'claro');
+        });
+
+        // ANIMACION SCROLL
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.paquete, .galeria-item, .resena, .info-item').forEach(el => {
+            el.classList.add('animar');
+            observer.observe(el);
+        });
+
+        // HEADER SOMBRA
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            header.classList.toggle('header-sombra', window.scrollY > 50);
+        });
+    </script>
+
+</body>
+</html>
