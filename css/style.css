@@ -1,7 +1,4 @@
-﻿/* ============================
-   RESET Y VARIABLES
-============================ */
-* {
+﻿* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -70,9 +67,6 @@ img {
     transform: translateY(0);
 }
 
-/* ============================
-   HEADER / NAVEGACION
-============================ */
 .header {
     background: transparent;
     position: fixed;
@@ -265,7 +259,7 @@ img {
 }
 
 /* ============================
-   HERO / GLOBO TERRAQUEO 3D
+   GLOBO TERRAQUEO 3D
 ============================ */
 .hero {
     position: relative;
@@ -382,9 +376,6 @@ img {
     }
 }
 
-/* ============================
-   SECCIONES GENERALES
-============================ */
 .seccion {
     padding: 100px 0;
 }
@@ -412,9 +403,6 @@ img {
     margin-right: auto;
 }
 
-/* ============================
-   PAQUETES DE VIAJE
-============================ */
 .paquetes {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
@@ -591,9 +579,6 @@ img {
     box-shadow: 0 10px 30px rgba(0, 119, 182, 0.4);
 }
 
-/* ============================
-   GALERIA
-============================ */
 .galeria {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -642,9 +627,6 @@ img {
     letter-spacing: 0.5px;
 }
 
-/* ============================
-   RESEÑAS
-============================ */
 .resenas {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -723,9 +705,6 @@ img {
     z-index: 1;
 }
 
-/* ============================
-   FORMULARIO DE CONTACTO
-============================ */
 .contacto-container {
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
@@ -876,9 +855,6 @@ img {
     font-size: 0.9rem;
 }
 
-/* ============================
-   FOOTER
-============================ */
 .footer {
     background: var(--color-oscuro);
     color: var(--color-blanco);
@@ -996,9 +972,6 @@ img {
     font-size: 0.85rem;
 }
 
-/* ============================
-   MODO OSCURO
-============================ */
 .modo-oscuro {
     --color-blanco: #0f172a;
     --color-claro: #1e293b;
@@ -1230,9 +1203,6 @@ img {
     background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
 }
 
-/* ============================
-   RESPONSIVE - TABLET
-============================ */
 @media (max-width: 900px) {
     .hero {
         height: 450px;
@@ -1280,9 +1250,6 @@ img {
     }
 }
 
-/* ============================
-   RESPONSIVE - MOVIL
-============================ */
 @media (max-width: 600px) {
     .menu-hamburger {
         display: block;
